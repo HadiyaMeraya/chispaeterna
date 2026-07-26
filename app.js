@@ -122,7 +122,7 @@ const SERVICES_DATA = {
   "mediumnidad": {
     title: "Mediumnidad Sagrada",
     category: "Lecturas y Oráculo",
-    description: `La mediumnidad es una práctica espiritual sagrada y respetuosa orientada a sintonizar nuestra frecuencia con la de aquellos seres queridos que ya han trascendido el plano físico terrestre. A través de este enlace mediúmnico canalizado por Hadiya Meraya, se abre un espacio de comunicación sanadora para el alma.
+    description: `La mediumnidad es una práctica espiritual sagrada y respetuosa orientada a sintonizar nuestra frecuencia con la de aquellos seres queridos que ya han trascendido el plano físico terrestre. A través de este enlace mediúmnico canalizado por Eva, se abre un espacio de comunicación sanadora para el alma.
 
     Estas sesiones están impregnadas de una profunda compasión y solemnidad, y buscan aportar paz y consuelo al proceso de duelo, confirmando la supervivencia de la conciencia y la continuidad de los lazos afectivos. Los mensajes transmitidos proveen guía espiritual y sanación afectiva profunda.`,
     icon: `<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="48" height="48"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>`
