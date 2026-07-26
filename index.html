@@ -71,14 +71,14 @@
             <span>— Shu Vedanta & Hadiya Meraya</span>
           </div>
           <div class="about-profiles">
-            <div class="profile-card">
+            <div class="profile-card" style="cursor: pointer;">
               <img src="assets/brujabuenayhadadeluz.jpeg" alt="Hadiya Meraya">
               <div class="profile-info">
                 <h4>Hadiya Meraya</h4>
                 <span>Bruja Buena, Hada de Luz y Chamana Mística</span>
               </div>
             </div>
-            <div class="profile-card">
+            <div class="profile-card" style="cursor: pointer;">
               <img src="assets/shuvedanta.jpeg" alt="Shu Vedanta">
               <div class="profile-info">
                 <h4>Shu Vedanta</h4>
@@ -455,6 +455,26 @@
       <p><strong>Aviso importante:</strong> Nuestros servicios tienen un carácter estrictamente espiritual, energético y de desarrollo y crecimiento personal. En ningún caso sustituyen, reemplazan ni equivalen a la atención médica, psicológica, psiquiátrica ni profesional competente cuando esta sea requerida para diagnosticar o tratar dolencias de salud.</p>
     </div>
   </section>
+
+  
+  <!-- MODAL DE PERFIL -->
+  <div class="modal" id="profile-modal">
+    <div class="modal-overlay" id="profile-modal-overlay"></div>
+    <div class="modal-wrapper">
+      <button class="modal-close-btn" id="profile-modal-close" aria-label="Cerrar modal">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+      </button>
+      <div class="modal-body" style="text-align: center;">
+        <img id="profile-modal-img" src="" alt="Perfil" style="width: 100%; max-height: 70vh; object-fit: contain; border-radius: 8px; border: 1px solid rgba(232, 184, 75, 0.2); margin-bottom: 1.5rem;">
+        <h3 class="modal-title" id="profile-modal-title" style="margin-bottom: 0.5rem;">Nombre</h3>
+        <span class="modal-category" id="profile-modal-role" style="display: block; margin-bottom: 1.5rem;">Rol</span>
+        <p class="modal-description" id="profile-modal-desc">Descripción...</p>
+        <div class="modal-footer" style="justify-content: center; margin-top: 2rem;">
+          <button class="btn btn-secondary" id="profile-modal-cancel-btn">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- PIE DE PÁGINA -->
   <footer class="main-footer">

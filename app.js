@@ -372,3 +372,42 @@ function setupFormSystem() {
     form.reset();
   });
 }
+
+
+  // 5. Sistema de Modal de Perfiles
+  const profileModal = document.getElementById("profile-modal");
+  const profileOverlay = document.getElementById("profile-modal-overlay");
+  const profileCloseBtn = document.getElementById("profile-modal-close");
+  const profileCancelBtn = document.getElementById("profile-modal-cancel-btn");
+
+  const closeProfileModal = () => {
+    profileModal.classList.remove("active");
+    document.body.style.overflow = "auto";
+  };
+
+  profileOverlay.addEventListener("click", closeProfileModal);
+  profileCloseBtn.addEventListener("click", closeProfileModal);
+  profileCancelBtn.addEventListener("click", closeProfileModal);
+
+  const profileCards = document.querySelectorAll(".profile-card");
+  
+  const profileTexts = {
+    "Hadiya Meraya": "Hadiya Meraya es una guía espiritual, sacerdotisa y trabajadora de la luz. Su enfoque compasivo y profundo te ayudará a reconectar con tu esencia, sanar heridas del pasado y despertar tu magia interior. Especialista en oráculos, lecturas energéticas y acompañamiento espiritual.",
+    "Shu Vedanta": "Shu Vedanta aporta su sabiduría como guía mística para transformar tus sombras en luz. Con un acercamiento profundo hacia el movimiento de la energía vital y la comprensión de los patrones inconscientes, te acompaña en el camino hacia la liberación y el empoderamiento personal."
+  };
+
+  profileCards.forEach(card => {
+    card.addEventListener("click", () => {
+      const img = card.querySelector("img");
+      const name = card.querySelector("h4").innerText;
+      const role = card.querySelector("span").innerText;
+
+      document.getElementById("profile-modal-img").src = img.src;
+      document.getElementById("profile-modal-title").innerText = name;
+      document.getElementById("profile-modal-role").innerText = role;
+      document.getElementById("profile-modal-desc").innerText = profileTexts[name] || "Guía espiritual de Chispa Eterna.";
+
+      profileModal.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
