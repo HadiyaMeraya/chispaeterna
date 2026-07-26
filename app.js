@@ -283,7 +283,12 @@ function setupModalSystem() {
         document.getElementById("modal-title").innerText = service.title;
         document.getElementById("modal-category").innerText = service.category;
         document.getElementById("modal-description").innerText = service.description;
-        document.getElementById("modal-icon").innerHTML = service.icon;
+        const imgElement = card.querySelector(".service-image");
+        if (imgElement) {
+          document.getElementById("modal-icon").innerHTML = `<img src="${imgElement.src}" class="service-image" alt="${service.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(232, 184, 75, 0.2);">`;
+        } else {
+          document.getElementById("modal-icon").innerHTML = service.icon;
+        }
 
         // Mostrar modal
         modal.classList.add("active");
