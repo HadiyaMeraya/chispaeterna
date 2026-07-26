@@ -285,7 +285,11 @@ function setupModalSystem() {
         document.getElementById("modal-description").innerText = service.description;
         const imgElement = card.querySelector(".service-image");
         if (imgElement) {
-          document.getElementById("modal-icon").innerHTML = `<img src="${imgElement.src}" class="service-image" alt="${service.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(232, 184, 75, 0.2);">`;
+          let htmlStr = `<img src="${imgElement.src}" class="service-image" alt="${service.title}" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(232, 184, 75, 0.2);">`;
+          if (serviceId === 'shundalini') {
+            htmlStr += `<img src="assets/Shundalini2.jpeg" class="service-image" alt="Shundalini Extra" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; border: 1px solid rgba(232, 184, 75, 0.2); margin-top: 1rem;">`;
+          }
+          document.getElementById("modal-icon").innerHTML = htmlStr;
         } else {
           document.getElementById("modal-icon").innerHTML = service.icon;
         }
