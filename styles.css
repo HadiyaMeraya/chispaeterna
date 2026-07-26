@@ -1292,3 +1292,43 @@ textarea.form-input {
     text-align: center;
   }
 }
+
+
+/* About Profiles */
+.about-profiles {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(20, 20, 20, 0.6);
+  padding: 0.75rem 1rem;
+  border-radius: 50px;
+  border: 1px solid rgba(232, 184, 75, 0.2);
+  flex: 1;
+  min-width: 250px;
+}
+
+.profile-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--primary-gold);
+}
+
+.profile-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+.profile-info span {
+  font-size: 0.85rem;
+  color: var(--primary-gold);
+}
