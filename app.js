@@ -356,7 +356,7 @@ function setupFormSystem() {
     }
 
     // Número de WhatsApp del negocio (ejemplo ficticio del plan)
-    const phoneNumber = "34600000000";
+    const phoneNumber = "34603137256";
 
     // Codificación del mensaje para URL de WhatsApp
     const introText = `Hola, mi nombre es *${name}* (${email}). me gustaría reservar una sesión de *${service}*.\n\n`;
